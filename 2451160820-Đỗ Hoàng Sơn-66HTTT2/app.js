@@ -403,7 +403,7 @@ function deleteBorrow(index){
     );
 }
 
-/* Thông báo */
+/* Thông báo  */
 
 function showMessage(text){
 
