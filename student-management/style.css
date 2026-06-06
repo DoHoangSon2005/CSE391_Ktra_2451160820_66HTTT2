@@ -1,0 +1,193 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    padding:20px;
+}
+
+.container{
+    max-width:1400px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.message{
+    min-height:25px;
+    color:green;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.statistics{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+
+.statistics div{
+    background:#fff;
+    padding:10px 15px;
+    border-radius:5px;
+    font-weight:bold;
+    box-shadow:0 2px 5px rgba(0,0,0,.1);
+}
+
+.toolbar{
+    margin-bottom:20px;
+}
+
+#btnAddBorrow{
+    padding:10px 20px;
+    border:none;
+    background:#3498db;
+    color:#fff;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+#btnAddBorrow:hover{
+    background:#2980b9;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+}
+
+th,
+td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background:#3498db;
+    color:#fff;
+}
+
+.edit-btn,
+.delete-btn{
+    border:none;
+    padding:6px 12px;
+    color:#fff;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+.edit-btn{
+    background:orange;
+    margin-right:5px;
+}
+
+.delete-btn{
+    background:red;
+}
+
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.5);
+    overflow:auto;
+}
+
+.modal-content{
+    width:700px;
+    max-width:95%;
+    margin:30px auto;
+    background:#fff;
+    padding:20px;
+    border-radius:8px;
+}
+
+.modal-content h2{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.modal-content input,
+.modal-content select,
+.modal-content textarea{
+    width:100%;
+    padding:10px;
+    margin:5px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.modal-content label{
+    display:block;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+.error{
+    display:block;
+    min-height:18px;
+    color:red;
+    font-size:13px;
+    margin-bottom:5px;
+}
+
+.modal-buttons{
+    display:flex;
+    justify-content:flex-end;
+    gap:10px;
+    margin-top:15px;
+}
+
+.modal-buttons button{
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.modal-buttons button[type="submit"]{
+    background:#27ae60;
+    color:white;
+}
+
+#btnClose{
+    background:#e74c3c;
+    color:white;
+}
+
+@media(max-width:768px){
+
+    .statistics{
+        flex-direction:column;
+    }
+
+    table{
+        display:block;
+        overflow-x:auto;
+    }
+
+    .modal-content{
+        width:100%;
+    }
+
+    .modal-buttons{
+        flex-direction:column;
+    }
+
+    .modal-buttons button{
+        width:100%;
+    }
+}
